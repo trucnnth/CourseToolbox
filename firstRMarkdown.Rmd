@@ -11,9 +11,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This is an R Markdown document. Markdown is a **simple** formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can *embed* an R code chunk like this:
+
+*I just use cmd+opt+i to insert this code chunk, and this line is in italic.*
+
+```{r}
+str(cars)
+```
+
+```{r}
+print('Hello World!')
+```
 
 ```{r cars}
 summary(cars)
@@ -28,3 +38,13 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+### This is a Header level 3 to test out three hashtags
+
+This is a list with bullet points. Two spaces should be at the end. An enter is inserted to init list
+
+- This is the first item  
+- This is the **second** item, but without the 2 spaces at the end  
+- This is the *third* item, not sure if it'll run  
+- This is a link to <https://coursera.org> [**Click link**](https://coursera.org) 
+- This is an in-line R code `cars$dist`  
